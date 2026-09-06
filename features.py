@@ -4,6 +4,7 @@ All features are built from *past* prices only (never the current day's
 close), so the model can't cheat by peeking at the value it's predicting.
 The same feature logic is reused for training (build_feature_frame) and for
 iterative multi-step forecasting (make_features_from_history).
+
 """
 
 import numpy as np
