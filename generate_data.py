@@ -7,6 +7,7 @@ date range, or different volatility.
 
 Usage:
     python data/generate_data.py [--days 1000] [--seed 42] [--out data/stock_prices.csv]
+    
 """
 
 import argparse
