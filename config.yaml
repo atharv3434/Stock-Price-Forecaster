@@ -1,0 +1,16 @@
+# Project configuration for the stock price forecaster.
+
+data_path: data/stock_prices.csv
+model_path: models/forecaster.joblib
+
+# Feature engineering
+n_lags: 10          # how many past days' closing prices to use as features
+rolling_windows: [5, 10, 20]   # rolling mean/std window sizes (in days)
+
+# Train/test split — the last `test_days` days are held out for evaluation
+test_days: 60
+
+# Forecasting
+forecast_horizon: 14   # number of future days to forecast when running predict.py
+
+random_state: 42
